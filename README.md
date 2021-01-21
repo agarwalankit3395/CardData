@@ -2,6 +2,8 @@
 
 npm install
 
+To install all the neccessary packages 
+
 # Card
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.

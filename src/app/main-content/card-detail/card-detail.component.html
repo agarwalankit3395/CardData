@@ -1,0 +1,72 @@
+<mat-accordion multi="true" *ngIf="cards.length > 0">
+  <mat-expansion-panel *ngFor="let card of cards">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        CardNumber :
+        {{ card.CardNumber}}
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-panel-description>
+      Name :
+      {{ card.CardHolderName}}
+    </mat-panel-description>
+    <mat-panel-description>
+      Expiry Date :
+      {{ card.CardExpiry}}
+    </mat-panel-description>
+    <mat-panel-description>
+      CVV :
+     {{ card.CardSecurityCode}}
+    </mat-panel-description>
+    <mat-panel-description>
+      Amount :
+     {{ card.Amount}}
+    </mat-panel-description>
+  </mat-expansion-panel>
+</mat-accordion>
+<p mat-body-2 *ngIf="cards.length <= 0">No Data Inserted!</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- *ngFor="let card of cards"
+  <table class="mat-elivation-z8">
+    <ng-container matColumnDef="position">
+      <th>Card Number</th>
+      <td>card.CardNumber </td>
+    </ng-container>
+    <ng-container matColumnDef="position">
+      <th>Card Holder Name</th>
+      <td> card.CardHolderName </td>
+    </ng-container>
+    <ng-container matColumnDef="position">
+      <th>Expiry Date</th>
+      <td>card.CardExpiry </td>
+    </ng-container>
+    <ng-container matColumnDef="position">
+      <th>Card CVV</th>
+      <td> card.CardSecurityCode </td>
+    </ng-container>
+    <ng-container matColumnDef="position">
+      <th>Amount</th>
+      <td>card.Amount </td>
+    </ng-container>
+  </table>
+
+   -->
